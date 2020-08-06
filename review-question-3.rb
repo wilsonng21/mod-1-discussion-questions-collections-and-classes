@@ -18,11 +18,11 @@ class Photo
     attr_accessor :user 
 
     def comments 
-        Comment.all
+        Comment.all ##how to make comments just return instance and no .comment string?
     end
 
     def make_comment(comment_param)
-        Comment.new(comment_param)
+        Comment.new(comment_param) 
     end               
 
 end
